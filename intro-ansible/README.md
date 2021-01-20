@@ -1,31 +1,31 @@
 ## Show current setting
 (venv) [root@localhost intro-ansible]# ansible-playbook ansible-02-ios-modules/02-ios_command_show.yaml
 
-PLAY [Sample IOS show version for Ansible 2.5] *******************************************************************************
+PLAY [Sample IOS show version for Ansible 2.5] *******************************************************************************  
 
-TASK [GATHERING FACTS] *******************************************************************************************************
-ok: [ios-xe-mgmt.cisco.com]
+TASK [GATHERING FACTS] *******************************************************************************************************  
+ok: [ios-xe-mgmt.cisco.com]  
 
-TASK [display current IOS version] *******************************************************************************************
-ok: [ios-xe-mgmt.cisco.com] => {
-    "ansible_net_version": "16.09.03"
-}
+TASK [display current IOS version] *******************************************************************************************  
+ok: [ios-xe-mgmt.cisco.com] => {  
+    "ansible_net_version": "16.09.03"  
+}  
 
-TASK [run show ip int brie] **************************************************************************************************
-ok: [ios-xe-mgmt.cisco.com]
+TASK [run show ip int brie] **************************************************************************************************  
+ok: [ios-xe-mgmt.cisco.com]  
 
-TASK [display value of "myint" variable] *************************************************************************************
-ok: [ios-xe-mgmt.cisco.com] => {
-    "myint[\"stdout_lines\"][0]": [
-        "Interface              IP-Address      OK? Method Status                Protocol",
-        "GigabitEthernet1       10.10.20.48     YES NVRAM  up                    up      ",
-        "GigabitEthernet2       unassigned      YES NVRAM  administratively down down    ",
-        "GigabitEthernet3       unassigned      YES NVRAM  administratively down down"
-    ]
-}
+TASK [display value of "myint" variable] *************************************************************************************  
+ok: [ios-xe-mgmt.cisco.com] => {  
+    "myint[\"stdout_lines\"][0]": [  
+        "Interface              IP-Address      OK? Method Status                Protocol",  
+        "GigabitEthernet1       10.10.20.48     YES NVRAM  up                    up      ",  
+        "GigabitEthernet2       unassigned      YES NVRAM  administratively down down    ",  
+        "GigabitEthernet3       unassigned      YES NVRAM  administratively down down"  
+    ]  
+}  
 
-TASK [run show users] ********************************************************************************************************
-ok: [ios-xe-mgmt.cisco.com]
+TASK [run show users] ********************************************************************************************************  
+ok: [ios-xe-mgmt.cisco.com]  
 
 TASK [display value of "shuser" variable] ************************************************************************************
 ok: [ios-xe-mgmt.cisco.com] => {
