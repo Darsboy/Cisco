@@ -3,9 +3,10 @@ ansible_python_interpreter="/usr/bin/env python"
 
 [iosxe:vars]
 # Fill in a unique pod name with no spaces
-user_pod = mypod
+user_pod = pod_Darcy
 # Fill in a pod number between 10 and 250
-pod_number = 10
+pod_number = 155
+
 
 # The next two variables are only required for the DevNet Express Mission. When you get to the mission it will instruct
 # you to fill these in. If you are using the sandbox lab, you may ignore them.
